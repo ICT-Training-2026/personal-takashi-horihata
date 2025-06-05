@@ -3,6 +3,15 @@ package store;
 public class SpecialProduct extends Product {
 	private int orgPrice;
 	
+//	constructor
+	public SpecialProduct(String name, int price, int orgPrice) {
+		super(name, price);
+		this.orgPrice = orgPrice;
+	}
+	public SpecialProduct(String name) {
+		this(name, 0, 0);
+	}
+	
 //	getter, setter
 	public int getOrgPrice() {
 		return orgPrice;

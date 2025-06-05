@@ -3,10 +3,18 @@ package store;
 public class Product {
 	private static final String STORE_NAME = "速水PC販売店";
 	private static final int DEFAULT_CHANGE_AMT = 1000;
-//	private static int instanceCnt = 0;
 	private String name;
 	private int price;	
 	
+	
+//	constructor
+	public Product(String name, int price) {
+		this.name = name;
+		this.price = price;
+	}
+	public Product(String name) {
+		this(name, 0);
+	}
 	
 //	class method
 	public static void displayStoreName() {
